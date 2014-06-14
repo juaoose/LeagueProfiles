@@ -17,7 +17,7 @@ public class ProfileManager {
 	// Paths n stuff
 	private static String LOL_PATH = "";
 	//this one may vary a lot from patch to patch
-	private static final String VIDEO_CONFIG_PATH ="/RADS/solutions/lol_game_client_sln/releases/0.0.1.39/deploy/DATA/menu/hud";
+	private static final String VIDEO_CONFIG_PATH ="/RADS/solutions/lol_game_client_sln/releases/0.0.1.43/deploy/DATA/menu/hud";
 	
 	private static final String MOUSE_KEYBOARD_PATH="/Config/input.ini";
 	
