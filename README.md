@@ -3,7 +3,7 @@ LeagueProfiles
 
 Really basic app to create and manage profiles(Keybinding, Hud and game settings) when there are several players using that one pc.
 
-Did this in like 3 hours, it is basic and dumb written Java.
+Did this in like nothing, it is basic and dumb written Java.
 
 It hay have a few problems with using buttons in certain contitions since I did not spend a lot of time checking every case.
 
