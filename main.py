@@ -10,11 +10,9 @@ def do_http(url, data=None):
         return urllib2.urlopen(urllib2.Request(url)).read()
  
 if __name__ == '__main__':
-    # edit these values!
     summoner_names = ['summoner1', 'summoner2']
-    region = 'na'
+    region = 'lan'
     time_to_sleep = 60
-    # NO MORE EDITING! :D
     base_url = 'http://%s.op.gg/' % region
     while True:
         for summoner_name in summoner_names:
