@@ -9,6 +9,16 @@ def do_http(url, data=None):
     else:
         return urllib2.urlopen(urllib2.Request(url)).read()
         
+
+if __name__ == '__main__':
+ while True:
+        try:
+           func()
+        except:
+            pass
+        else:
+            break
+           
  def func():
    summoner_names = ['summoner1', 'summoner2']
     region = 'lan'
@@ -27,13 +37,4 @@ def do_http(url, data=None):
                 pass
         print  "Sleeping for %s seconds." % time_to_sleep
         sleep(time_to_sleep)
- 
-if __name__ == '__main__':
- while True:
-        try:
-           func()
-        except:
-            pass
-        else:
-            break
     
