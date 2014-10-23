@@ -11,16 +11,7 @@ def do_http(url, data=None):
         
 
 if __name__ == '__main__':
- while True:
-        try:
-           func()
-        except:
-            pass
-        else:
-            break
-           
- def func():
-   summoner_names = ['summoner1', 'summoner2']
+summoner_names = ['summoner1', 'summoner2']
     region = 'lan'
     time_to_sleep = 60
     base_url = 'http://%s.op.gg/' % region
@@ -33,8 +24,12 @@ if __name__ == '__main__':
             try:
                 gameId = regex.search(response).groups()[0]
                 response = do_http(base_url + 'summoner/ajax/requestRecording.json/gameId=%s' % gameId)
-            except:
+            except OPCrash:
                 pass
         print  "Sleeping for %s seconds." % time_to_sleep
         sleep(time_to_sleep)
-    
+        
+except OPCrash:
+   epoch = time.time()
+   epoch = str(epoch)
+   print epoch
