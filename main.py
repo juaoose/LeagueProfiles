@@ -8,9 +8,9 @@ def do_http(url, data=None):
         return urllib2.urlopen(urllib2.Request(url, data)).read()
     else:
         return urllib2.urlopen(urllib2.Request(url)).read()
- 
-if __name__ == '__main__':
-    summoner_names = ['summoner1', 'summoner2']
+        
+ def func():
+   summoner_names = ['summoner1', 'summoner2']
     region = 'lan'
     time_to_sleep = 60
     base_url = 'http://%s.op.gg/' % region
@@ -27,3 +27,13 @@ if __name__ == '__main__':
                 pass
         print  "Sleeping for %s seconds." % time_to_sleep
         sleep(time_to_sleep)
+ 
+if __name__ == '__main__':
+ while True:
+        try:
+           func()
+        except:
+            pass
+        else:
+            break
+    
